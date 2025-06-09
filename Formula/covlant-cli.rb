@@ -1,13 +1,13 @@
 class CovlantCli < Formula
   desc "Command-line interface for Covlant"
   homepage "https://github.com/covlant/covlant-cli"
-  version "1.2.13"
+  version "1.2.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.13/covlant-macos-arm64-v1.2.13.tar.gz"
-      sha256 "123a5598f997d01c263257b75d52114c70051eecf9c50f5cefcdffe395c34e55"
+      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.14/covlant-macos-arm64-v1.2.14.tar.gz"
+      sha256 "a1f81305d6d204b8d32561372a19b74e8a887b15d3aad4c66d4747309a23117b"
     else
       odie "Covlant CLI currently only supports ARM-based Macs. Support for  Intel-based Macs is coming soon."
     end
@@ -15,11 +15,11 @@ class CovlantCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.13/covlant-linux-x86_64-v1.2.13.tar.gz"
-      sha256 "d2abe107643e7c479884fdb4975955b6a33b81d8043b61c1977e0a3573c0f20f"
+      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.14/covlant-linux-x86_64-v1.2.14.tar.gz"
+      sha256 "d974df30aa9f3613ffbf8cb17365745356f659d195e99e0220d6ec8342cc9bee"
     elsif Hardware::CPU.arm?
-      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.13/covlant-linux-arm64-v1.2.13.tar.gz"
-      sha256 "c33e47da5e58b25507a2b42e0ebb16fbd0350852daba9d0781277fe145d28224"
+      url "https://github.com/covlant/covlant-cli/releases/download/v1.2.14/covlant-linux-arm64-v1.2.14.tar.gz"
+      sha256 "f0d0ffe6b6fb5e4fa803c27b094d45c2f27cde54b335b04d8e3b8bdf2bfc519a"
     else
       odie "Covlant CLI currently only supports x86_64 and ARM64 Linux installations."
     end
